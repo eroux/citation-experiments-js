@@ -17,14 +17,23 @@
       var res = cite.format('bibliography', {
         format: 'html',
         template: 'chicago-fullnote-bibliography',
-        lang: "en_us"
+        lang: "en_US"
+      })
+      console.log(res)
+
+
+      cite = new Cite(citations["bdr:MW22084_0044-31"], { 'forceType': '@csl/object' })
+      res = cite.format('bibliography', {
+        format: 'html',
+        template: 'chicago-fullnote-bibliography',
+        lang: "en_US"
       })
       console.log(res)
      </script>
   </head>
   <body>
 
-    
+
 
   </body>
 </html>

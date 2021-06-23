@@ -2046,8 +2046,48 @@ citations["bdr:MW23819"] = {
 	"edition": "par gzhi1., par thengs 2."
 }
 
+// bdr:MW22084 : The Sde-dge Mtshal-par Bkaʼ-ʼgyur:a facsimile edition of the 18th century redaction of Si-tu Chos-kyi-ʼbyuṅ-gnas /prepared under the direction of H.H the 16th Rgyal-dbaṅ Karma-pa.
+// bdr:MW22084_S0008 : (section) phal chen
+// bdr:MW22084_0044 : (text) sangs rgyas phal po che zhes bya ba shin tu rgyas pa chen po'i mdo
+// bdr:MW22084_0044-31 : (text) sa bcu'i le'u ste sum cu gcig pa
 
+// on tbrc.org:
+// chos kyi 'byung gnas. "phal po che'i mdo." In bka' 'gyur (sde dge par phud). TBRC W22084. 36: 4 - 793. delhi: delhi karmapae chodhey gyalwae sungrab partun khang, 1976-1979. http://tbrc.org/link?RID=O1GS12980|O1GS129802KG218975$W22084
 
+citations["bdr:MW22084_0044-31"] = {
+  "id":"bdr:MW22084_0044-31",
+  "type":"chapter",
+  "language": "Tibetan (Uchen)",
+  "source": "Buddhist Digital Resource Center (BDRC)",
+  "url": "http://purl.bdrc.io/resource/MW22084_0044-31",
+  "accessed": {
+       "date-parts": [[ 2021, 6, 18 ]]
+  },
+  "editor": [
+    {
+      "family": "chos kyi 'byung gnas"
+    }
+  ],
+  "translator": [ 
+    {
+      family: "Jinamitra"
+    }, {
+      family: "Yeshe De"
+    }, {
+      family: "Surendrabodhi"
+    }
+  ],
+  "number-of-volumes": 103,
+  "title": "sa bcu'i le'u ste sum cu gcig pa",
+  "container-title": "The Sde-dge Mtshal-par Bkaʼ-ʼgyur:a facsimile edition of the 18th century redaction of Si-tu Chos-kyi-ʼbyuṅ-gnas /prepared under the direction of H.H the 16th Rgyal-dbaṅ Karma-pa",
+  "section": "phal chen",
+  "publisher": "Delhi karmapae chodhey gyalwae sungrab partun khang",
+  "publisher-place": "Delhi",
+  "issued": {"date-parts": [[1976], [1979]]},
+  "language": "en_US",
+  "volume": 36,
+  "page-first": 333
+}
 
 var chosenStyleID = "chicago-fullnote-bibliography";
 
