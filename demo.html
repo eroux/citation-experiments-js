@@ -10,16 +10,21 @@
 
       let config = Cite.plugins.config.get('@csl')
       config.templates.add("chicago-fullnote-bibliography", styles["chicago-fullnote-bibliography"])
-      config.locales.add("zh_CN", locales["zh_CN"])
+      //console.log(locales["zh_CN"])
+      //console.log(config.locales.add)
+      // this crashes for some reason:
+      //config.locales.add("zh_CN", locales["zh_CN"])
       config.locales.add("en_US", locales["en_US"])
 
       var cite = new Cite(citations["bdr:MW23819"], { 'forceType': '@csl/object' })
       var res = cite.format('bibliography', {
         format: 'html',
         template: 'chicago-fullnote-bibliography',
-        lang: "en_US"
+        lang: "zh_CN"
       })
       console.log(res)
+
+
 
 
       cite = new Cite(citations["bdr:MW22084_0044-31"], { 'forceType': '@csl/object' })
@@ -29,6 +34,47 @@
         lang: "en_US"
       })
       console.log(res)
+
+      // example from http://ldspdi-dev.bdrc.io/CSLObj/bdr:MW22084
+
+
+      // English
+      cite = new Cite(citations["bdr:MW22084"]["en"], { 'forceType': '@csl/object' })
+      res = cite.format('bibliography', {
+        format: 'html',
+        template: 'chicago-fullnote-bibliography',
+        lang: "en_US"
+      })
+      console.log(res)
+
+      // Transliterated original
+      cite = new Cite(citations["bdr:MW22084"]["latn"], { 'forceType': '@csl/object' })
+      res = cite.format('bibliography', {
+        format: 'html',
+        template: 'chicago-fullnote-bibliography',
+        lang: "en_US"
+      })
+      console.log(res)
+
+      // Tibetan
+      cite = new Cite(citations["bdr:MW22084"]["bo"], { 'forceType': '@csl/object' })
+      res = cite.format('bibliography', {
+        format: 'html',
+        template: 'chicago-fullnote-bibliography',
+        lang: "en_US"
+      })
+      console.log(res)
+
+      // Chinese
+      cite = new Cite(citations["bdr:MW22084"]["zh"], { 'forceType': '@csl/object' })
+      res = cite.format('bibliography', {
+        format: 'html',
+        template: 'chicago-fullnote-bibliography',
+        lang: "en_US"
+      })
+      console.log(res)
+
+
      </script>
   </head>
   <body>

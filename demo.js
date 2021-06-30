@@ -2023,7 +2023,6 @@ citations = {}
 citations["bdr:MW23819"] = {
 	"id":"bdr:MW23819",
 	"type":"book",
-	"language": "Tibetan (Uchen)",
 	"source": "Buddhist Digital Resource Center (BDRC)",
 	"url": "http://purl.bdrc.io/resource/MW23819",
 	"accessed": {
@@ -2057,7 +2056,6 @@ citations["bdr:MW23819"] = {
 citations["bdr:MW22084_0044-31"] = {
   "id":"bdr:MW22084_0044-31",
   "type":"chapter",
-  "language": "Tibetan (Uchen)",
   "source": "Buddhist Digital Resource Center (BDRC)",
   "url": "http://purl.bdrc.io/resource/MW22084_0044-31",
   "accessed": {
@@ -2086,16 +2084,12 @@ citations["bdr:MW22084_0044-31"] = {
   "issued": {"date-parts": [[1976], [1979]]},
   "language": "en_US",
   "volume": 36,
-  "page-first": 333
+  //"page-first": 333,
+  "page": "333-567"
 }
 
-var chosenStyleID = "chicago-fullnote-bibliography";
+// example from http://ldspdi-dev.bdrc.io/CSLObj/bdr:MW22084
 
-citeprocSys = {
-  retrieveLocale: function (lang) {
-    return locales[lang]
-  },
-  retrieveItem: function(id){
-    return citations[id];
-  }
-};
+citations["bdr:MW22084"] = {"bo":{"language":"zh_CN","accessed":{"date-parts":[[2021,6,30]]},"url":"http://purl.bdrc.io/resource/MW22084","id":"bdr:MW22084","source":"ནང་བསྟན་དཔེ་ཚོགས་ལྟེ་གནས།（BDRC）","title":"བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽","type":"book","editor":[{"family":"སི་ཏུ་ཆོས་ཀྱི་འབྱུང་གནས།"}],"number-of-volumes":"103","publisher":"དེལྷི་ཀརྨཔཨེ་ཆོདྷེཡ་གྱལྭཨེ་སུངྲབ་པརྟུན་ཁང་།","publisher-place":"དེལྷི།","issued":{"date-parts":[[1976],[1979]]}},"latn":{"language":"en_US","accessed":{"date-parts":[[2021,6,30]]},"url":"http://purl.bdrc.io/resource/MW22084","id":"bdr:MW22084","source":"Buddhist Digital Resource Center (BDRC)","title":"Bkaʼ ʼgyur (sde dge par phud)","type":"book","editor":[{"family":"Si tu chos kyi ʼbyung gnas"}],"number-of-volumes":"103","publisher":"Delhi karmapae chodhey gyalwae sungrab partun khang","publisher-place":"Delhi","issued":{"date-parts":[[1976],[1979]]}},"en":{"language":"en_US","accessed":{"date-parts":[[2021,6,30]]},"url":"http://purl.bdrc.io/resource/MW22084","id":"bdr:MW22084","source":"Buddhist Digital Resource Center (BDRC)","title":"The Sde-dge Mtshal-par Bkaʼ-ʼgyur:a facsimile edition of the 18th century redaction of Si-tu Chos-kyi-ʼbyuṅ-gnas /prepared under the direction of H.H the 16th Rgyal-dbaṅ Karma-pa.","type":"book","editor":[{"family":"Tai Situ 08"}],"number-of-volumes":"103","publisher":"Delhi karmapae chodhey gyalwae sungrab partun khang","publisher-place":"Delhi","issued":{"date-parts":[[1976],[1979]]}},"zh":{"language":"zh_CN","accessed":{"date-parts":[[2021,6,30]]},"url":"http://purl.bdrc.io/resource/MW22084","id":"bdr:MW22084","source":"佛教数字资源中心（BDRC）","title":"བཀའ་འགྱུར ༼སྡེ་དགེ་པར་ཕུད༽","type":"book","editor":[{"family":"司徒·曲吉穹勒"}],"number-of-volumes":"103","publisher":"དེལྷི་ཀརྨཔཨེ་ཆོདྷེཡ་གྱལྭཨེ་སུངྲབ་པརྟུན་ཁང་།","publisher-place":"དེལྷི།","issued":{"date-parts":[[1976],[1979]]}}}
+
+
