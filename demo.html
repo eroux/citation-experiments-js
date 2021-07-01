@@ -13,7 +13,7 @@
       //console.log(locales["zh_CN"])
       //console.log(config.locales.add)
       // this crashes for some reason:
-      //config.locales.add("zh_CN", locales["zh_CN"])
+      config.locales.add("zh-CN", locales["zh_CN"])
       config.locales.add("en_US", locales["en_US"])
 
       var cite = new Cite(citations["bdr:MW23819"], { 'forceType': '@csl/object' })
@@ -70,7 +70,7 @@
       res = cite.format('bibliography', {
         format: 'html',
         template: 'chicago-fullnote-bibliography',
-        lang: "en_US"
+        lang: "zh-CN"
       })
       console.log(res)
 
